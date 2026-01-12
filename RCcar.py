@@ -33,7 +33,7 @@ def backward(speed):
     pinTwoMotor_PWM.ChangeDutyCycle(speed)
 
 # --- Controller setup ---
-device = evdev.InputDevice("/dev/input/DEVICEHERE")  # replace with your actual device
+device = evdev.InputDevice("/dev/input/event2")  # replace with your actual device
 
 try:
     for event in device.read_loop():
