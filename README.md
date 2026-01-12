@@ -79,23 +79,36 @@ Created a rough outline of the inner gears.
 
 My Main electrical components:
 
-Servo -
+Servo:
+Operates the steering system. I'm using the GoBilda 5-Turn Servo to have more than enough toleratnce for RC control -
 
 <img width="206" height="203" alt="Screenshot 2026-01-12 at 12 14 45 PM" src="https://github.com/user-attachments/assets/ce783ff6-3476-4cbd-bae5-359588201035" />
 
-Raspberry pi - 
+Raspberry pi:
+Brain of the Car; executes the code needed - 
 
 <img width="270" height="177" alt="Screenshot 2026-01-12 at 12 15 00 PM" src="https://github.com/user-attachments/assets/5b978e61-a70f-441e-88ff-dcfb0b52efbd" />
 
-DC Motor - 
+DC Motor:
+Operates the differential - 
 
 <img width="230" height="184" alt="Screenshot 2026-01-12 at 12 15 17 PM" src="https://github.com/user-attachments/assets/f7d22fff-3163-4e24-a428-ac84174bca60" />
 
-H-Bridge Motor Driver -
+H-Bridge Motor Driver:
+Controls the DC Motor to operate the rear differential.
+
+<img width="425" height="73" alt="Screenshot 2026-01-12 at 3 06 47 PM" src="https://github.com/user-attachments/assets/0216db38-bbbb-42ae-a933-95999a285b02" />
+
+The red highlights are wired to power and black highlights are wired to ground and yellow highlights are wired to the GPIO pins.
+
+In this simple H-bridge, we are creating a path from power to ground to move the motor forward. RPWM is to control the speed at which the motor moves. L_EN or Left Enable creates a path from power to ground to move the motor backward. LPWM is to control the speed at which the motor moves.
+
+-
 
 <img width="211" height="198" alt="Screenshot 2026-01-12 at 12 15 37 PM" src="https://github.com/user-attachments/assets/529fb610-2f2b-4122-a5ea-22efb43f2dd2" />
 
-Buck Converter (12 V to 5 V) -
+Buck Converter (12 V to 5 V)
+Converts the 12 Volt batteries to 5 Volts to power microcontrollers such as raspberry pi, servo, etc. -
 
 <img width="215" height="153" alt="Screenshot 2026-01-12 at 12 15 56 PM" src="https://github.com/user-attachments/assets/27814178-1b28-4dfd-a4af-2f42eb797b39" />
 
