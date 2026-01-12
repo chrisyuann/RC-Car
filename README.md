@@ -120,6 +120,15 @@ Rough electrical diagram:
 
 <img width="430" height="331" alt="Screenshot 2026-01-12 at 12 16 35 PM" src="https://github.com/user-attachments/assets/2b355a26-9445-444b-9a71-a95657f0c16b" />
 
+## Challenges and setbacks
+
+I had many challenges. There were many dimension conflicts. For example, when I created one part of the system, there were things that I didn't consider. This included not positioning my back wheel bearing hole correctly to account for the front wheel position. This required a reiteration of my differential mount, DC Motor mount, and standoff heights. Another problem included not accounting for the diameter of the differential. I needed to reCAD the chassis, yet another reiteration.
+
+When I was putting in the heat set inserts to the standoffs and other mounts, my lab didn't have the soldering iron that fits for M3 heat sets. Thus, I had to use the standard soldering iron, which created a larger margin for error in the angle tilt of the heat set. For a few standoffs, my heat set was angled slightly.
+
+The chassis was also too big to be printed on the print bed of the 3D printer. I needed to split the chassis in half to print separately, and create heat sets to screw them together. The printing time was extremely long.
+
+
 ## Reflection as of 1/12/26)
 I finished my steering system and have developed my chassis. I am currently mounting my components and troubleshooting the differential. I am still working on making my car into something tangible, but as of now, the steering system is working successfully.
 
