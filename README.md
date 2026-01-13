@@ -146,7 +146,7 @@ When I was putting in the heat set inserts to the standoffs and other mounts, my
 The chassis was also too big to be printed on the print bed of the 3D printer. I needed to split the chassis in half to print separately, and create heat sets to screw them together. The printing time was extremely long.
 
 
-## Reflection as of 1/12/26)
+## Reflection as of 1/12/26
 I finished my steering system and have developed my chassis. I am currently mounting my components and troubleshooting the differential. I am still working on making my car into something tangible, but as of now, the steering system is working successfully.
 
 
