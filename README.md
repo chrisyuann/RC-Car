@@ -134,7 +134,7 @@ I was testing the raspberry pi: using GPIO 11 pin for PWM control for the steeri
 
 <img width="427" height="152" alt="Screenshot 2026-01-12 at 7 10 34 PM" src="https://github.com/user-attachments/assets/5c489e13-ced2-47f9-952c-022911ab61bb" />
 
-This logic fits with the evdev library. My initial code sets up the GPIO pins to be used. Then, I define variables for 
+This logic fits with the evdev library. My initial code sets up the GPIO pins to be used. Then, I define variables for going forwards and backwards indicated for a specific GPIO pin. The H-bridge motor driver pinouts will be connected to the GPIO pins to open and close the H-circuit. I set up evdev library so I can read the xbox controller. I read for analog signals because I want to use the toggles that have variable power such as the joysticks and other analog buttons. I've set up the servo control to be the left joystick toggle and the forwards and backwards functions to be the top left and top right toggles. I'll update on future troubleshooting.
 
 
 ## Challenges and setbacks
