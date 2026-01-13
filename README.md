@@ -120,6 +120,23 @@ Rough electrical diagram:
 
 <img width="430" height="331" alt="Screenshot 2026-01-12 at 12 16 35 PM" src="https://github.com/user-attachments/assets/2b355a26-9445-444b-9a71-a95657f0c16b" />
 
+## Software
+
+The libraries I am using is GPIO and evdev. GPIO is a library to access the GPIO pins on the raspberry pi. I am going to control the servo and H-bridge motor driver by using these pins. Evdev is a library for device controllers such as the xbox controller. If I were using a wireless controller, I would bluetooth connect the controller to my raspberry pi, but I am using a wired one. I was able to read the device path here:
+
+<img width="414" height="63" alt="Screenshot 2026-01-12 at 7 06 37 PM" src="https://github.com/user-attachments/assets/0a80e744-2114-481b-aa46-b3f3a0415cba" />
+
+I was testing the raspberry pi: using GPIO 11 pin for PWM control for the steering, and using a buck converter to convert 12 volts into 5 volts to power the raspberry pi and servo. The controller is responding with values, but I am still in the process of troubleshooting, and I will ask others for help and may switch to have arduino as my microcontroller.
+
+<img width="240" height="283" alt="Screenshot 2026-01-12 at 7 08 22 PM" src="https://github.com/user-attachments/assets/feb8a611-7dd7-479a-aa38-b4fa73275112" />
+
+### Software Block Diagram
+
+<img width="427" height="152" alt="Screenshot 2026-01-12 at 7 10 34 PM" src="https://github.com/user-attachments/assets/5c489e13-ced2-47f9-952c-022911ab61bb" />
+
+This logic fits with the evdev library. My initial code sets up the GPIO pins to be used. Then, I define variables for 
+
+
 ## Challenges and setbacks
 
 I had many challenges. There were many dimension conflicts. For example, when I created one part of the system, there were things that I didn't consider. This included not positioning my back wheel bearing hole correctly to account for the front wheel position. This required a reiteration of my differential mount, DC Motor mount, and standoff heights. Another problem included not accounting for the diameter of the differential. I needed to reCAD the chassis, yet another reiteration.
